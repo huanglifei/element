@@ -45,8 +45,7 @@
 }
 .out-box .foot-box .btn{
 	position: absolute;
-	bottom: 14px;
-	right: 20px;
+	bottom: 16px;
 	background-color: #00f;
 	width: 50px;
 	height: 26px;
@@ -56,7 +55,28 @@
 	cursor: pointer;
 	border-radius: 2px;
 }
+.alertbtn{
+		right: 20px;
 
+}
+
+.confirmbtn1{
+  right: 100px;
+}
+.confirmbtn2{
+right: 20px;
+}
+.inp-box{
+	width: 80%;
+	border: 1px #ddd solid;
+	margin: auto;
+	height: 30px;
+	border-radius: 2px;
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 10px;
+	outline: none;
+}
 .mask-box{
 	position: fixed;
 	top: 0;
