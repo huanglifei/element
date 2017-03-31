@@ -1,0 +1,150 @@
+/* Base Application Styles */
+*{
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+    font-family: 'icont-trun-arrow';
+    src: url("../font/icons/turn-arrow.eot") format("embedded-opentype"), url("../font/icons/turn-arrow.svg") format("svg"), url("../font/icons/turn-arrow.woff") format("woff"), url("../font/icons/turn-arrow.ttf") format("turetype");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*stage start*/
+
+.stage {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*stage end*/
+
+
+/*imgsec*/
+
+.imgsec {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ddd;
+    perspective: 1800px;
+}
+
+.img-figure {
+    position: absolute;
+    cursor: pointer;
+    width: 260px;
+    height: 364px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    color: #666651;
+    transform-origin: 0 50% 0;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out, left 0.6s ease-in-out, top 0.6s ease-in-out;
+}
+
+.img-figure img {
+    width: 220px;
+    height: 293px;
+}
+
+.img-figure figcaption {
+    width: 100%;
+}
+
+.img-figure figcaption h2 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.img-figure figcaption .img-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px;
+    overflow: auto;
+    color: #a7a0a2;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+    background-color: #fff;
+    box-sizing: border-box;
+    transform: rotateY(180deg) translateZ(1px);
+    backface-visibility: hidden;
+}
+
+.is-inverse {
+    transform: translate(240px) rotateY(180deg);
+}
+
+.is-inverse figcaption .img-back {
+    /*display: block;*/
+}
+
+.controller-nav {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    z-index: 101;
+    width: 100%;
+    height: 30px;
+    z-index: 101;
+    text-align: center;
+}
+
+.controller-unit {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    background: #aaa;
+    line-height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    transform: scale(0.5);
+}
+
+.controller-unit.is-center {
+    transform: scale(0.7);
+    background-color: #888;
+}
+
+.controller-unit.is-center::after {
+    transform: scale(0.7);
+    font-family: 'icont-trun-arrow';
+    font-size: 80%;
+    color: #fff;
+    content: '\e600';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.controller-unit.is-inverse {
+    /* transform:scale(.7); */
+    background-color: #555;
+    transform: scale(0.7) rotateY(180deg);
+}
+
+
+/*# sourceMappingURL=App.css.map */
