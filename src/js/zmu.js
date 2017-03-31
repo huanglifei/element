@@ -1,0 +1,1 @@
+$(function(){$(window).resize(function(){}),$(".J-more").click(function(o){$(".J-navlist").slideToggle("slow")});var o=$(".J-animation").offset().top;console.log(o),$(window).scroll(function(i){o>=$(window).scrollTop()&&o<$(window).scrollTop()+$(window).height()&&($(".bga").addClass("aimation"),$(".bgb").addClass("aimationb"),$(".bgc").addClass("aimation"))})});

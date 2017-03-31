@@ -78,7 +78,6 @@ define(['widget', 'jquery', 'jqueryUI'], function(widget, $, $UI) {
             if (this.cfg.hasMask) {
                this. _mask = $('<div class="mask-box"></div>');
                 this._mask.appendTo('body');
-                // console.log('_mask'+_mask);
             };
 
             //输入框是否自动获取焦点
@@ -86,7 +85,6 @@ define(['widget', 'jquery', 'jqueryUI'], function(widget, $, $UI) {
 
             	$(document).ready(function(){ 
             		$('#J-txt').focus();
-            	console.log('要获取焦点的'+$('#J-txt'));
             	});
             	
             }
@@ -166,7 +164,6 @@ define(['widget', 'jquery', 'jqueryUI'], function(widget, $, $UI) {
 
         },
         destructor: function() {
-        	console.log('有执行到这里哦'+ this._mask );
             this._mask && this._mask.remove();
         },
 
