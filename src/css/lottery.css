@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 38px;
+    height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;/*垂直居中*/
+  width:100%;
+  height:100%;
+  flex-wrap: wrap;
+}
+.content-tex{
+	flex: auto;
+    font-size: 0.6rem;
+    background-color: #00f;
+}
+.content {
+    width: 13rem;
+    height: 13rem;
+   position: relative;
+    overflow: hidden;
+    margin: auto;
+    // border: 1px #ff0 solid;
+
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.box img {
+    width: 100%;
+}
+
+.lotteryBtn {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: url(../images/lottery/arrow.png);
+    background-repeat: no-repeat;
+    background-size: auto 5rem;
+}
+
+
+
+
+@media only screen and (max-width:495px) {
+    html {
+        font-size: 36px !important;
+    }
+}
+@media only screen and (max-width:470px) {
+    html {
+        font-size: 36px !important;
+    }
+}
+@media only screen and (min-width:361px) and (max-width:470px) {
+    html {
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:360px) {
+    html {
+        font-size: 22px !important;
+    }
+
+
+
+}

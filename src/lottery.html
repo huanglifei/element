@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄丽妃自制抽奖插件15296479365</title>
+    <link rel="stylesheet" type="text/css" href="css/lottery.css">
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/lottery.js"></script>
+   
+</head>
+
+<body>
+    <!-- <div class="content-tex">抽奖插件</div> -->
+
+    <div class="content J-body">
+        <div class="box " id="J-box"><img src="images/lottery/zzsc.png"></div>
+        <div id="J-lotteryBtn" class="lotteryBtn"></div>
+    </div>
+    <script type="text/javascript">
+
+
+    var aa = new Lottery({
+    	rotateNum: 5, //圆盘转动圈数
+        direction: 0, //0为顺时针，1为逆时针
+        starttime: '2017/4/9 00:00:00', //活动开始时间
+        endtime: '2017/5/6 00:00:00', //活动结束时间
+        rotateBody: '#J-box',
+    	clickHandle:function(){
+    		//点击处理函数
+    		var deg = Math.random()*360;
+    		this.goLottery(deg);
+    	}
+    });
+
+
+
+    
+    </script>
+</body>
+
+</html>
